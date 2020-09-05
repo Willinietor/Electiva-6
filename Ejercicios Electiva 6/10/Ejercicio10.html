@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultado"></div>
+    <script>
+        var text = prompt("Vamos a mostrar las vocales, escribe una frase");
+        var nText = text.length;
+        var i;
+        for (i = 0; i < nText; i++) 
+        {
+            if (text.substr(i,1) === "a" || text.substr(i,1) === "e" || text.substr(i,1) === "i" || 
+            text.substr(i,1) === "o" || text.substr(i,1) === "u" || text.substr(i,1) === "A" || text.substr(i,1) === "E" || text.substr(i,1) === "I" || 
+            text.substr(i,1) === "O" || text.substr(i,1) === "U") 
+            {
+                document.write(text.substr(i,1));
+            }
+        }
+
+            
+
+    </script>
+</body>
+</html>

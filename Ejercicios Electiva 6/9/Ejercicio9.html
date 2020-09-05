@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio9</title>
+</head>
+<body>
+    <div id="resultado"></div>
+    <script>
+        var Texto = prompt("Escribe una frase para contar la vocal A");
+        var indices = [];
+
+        for(var i = 0; i < Texto.length; i++) 
+        {
+	        if (Texto[i].toLowerCase() === "a") indices.push(i);
+        }
+
+            document.getElementById("resultado").innerHTML = indices.length;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio17</title>
+</head>
+<body>
+    <script>
+
+        var Num1, NumPrimo;
+        Num1 = parseInt(prompt("Digite número a evaluar"));
+        i=2;
+        NumPrimo=true;
+
+        while(i<Num1)
+        {
+            if(Num1%i === 0)
+            {
+                NumPrimo=false;
+            }
+            i++;
+        }
+        if (NumPrimo==true)
+        {
+            document.write("El numero ingresado es primo")
+        }
+        else
+        {
+            document.write("El numero ingresado NO es primo")
+        }
+
+    </script>
+</body>
+</html>

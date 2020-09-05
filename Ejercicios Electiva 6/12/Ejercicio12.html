@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio12</title>
+</head>
+<body>
+    <div id="resultado"></div>
+    <script>
+        var a = e = i = o = u = 0;
+        Letras = consultarTexto();
+        
+        function consultarTexto(){
+            var Texto = prompt("Texto para contar vocales");
+            var Error = Texto.toLowerCase().split("");
+            return Error;
+        }        
+        for(l=0;l < Letras.length;l++){
+            switch(Letras[l]){
+                case "a":
+                    a++;
+                    break;
+                case "e":
+                    e++;
+                    break;
+                case "i":
+                    i++;
+                    break;
+                case "o":
+                    o++;
+                    break;
+                case "u":
+                    u++;
+            }
+        }
+        document.write("A = " +  a + " <br>");
+        document.write("E = " +  e + " <br>");
+        document.write("I = " +  i + " <br>");
+        document.write("O = " +  o + " <br>");
+        document.write("U = " +  u + " <br>");
+
+    </script>
+</body>
+</html>

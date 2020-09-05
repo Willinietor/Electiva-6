@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio11</title>
+</head>
+<body>
+    <div id="resultado"></div>
+    <script>   
+        var Texto = prompt("¿Cuántas vocales tiene tu frase? Digítala");
+        var indices = [];
+
+        for(var i = 0; i < Texto.length; i++) 
+        {
+	        if (Texto[i].toLowerCase() === "a" || Texto[i].toLowerCase() === "e" || Texto[i].toLowerCase() === "i" ||Texto[i].toLowerCase() === "o" || Texto[i].toLowerCase() === "u") indices.push(i);
+        }
+
+            document.getElementById("resultado").innerHTML = indices.length;
+    </script>
+</body>
+</html>
